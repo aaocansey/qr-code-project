@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate QR Code</title>
+  </head>
+  <body>
+    <h1>Generate QR Code</h1>
+    <form
+      id="qr-code-form"
+      method="post"
+      action="http://127.0.0.1:8000/user/lecturer/generate-qr-code"
+    >
+      <label for="data">Data to Encode (Optional):</label>
+      <input
+        type="text"
+        id="data"
+        name="data"
+        placeholder="Enter data for QR code"
+      />
+      <button class="btn" type="submit">Generate QR Code 2</button>
+    </form>
+    <div id="qr-code-container"></div>
+    <script src="qr_code.js">
+      
+    </script>
+  </body>
+</html>
